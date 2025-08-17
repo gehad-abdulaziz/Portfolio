@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gehad Abdulaziz | Front-End Developer</title>
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 dark:bg-black dark:text-gray-200 transition-colors duration-500">
+  
+  <!-- Header -->
+<header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm shadow-md z-50 transition-colors duration-500">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+        <a href="#home" class="text-2xl font-bold text-[#2196F3] dark:text-[#38bdf8]">Gehad Abdulaziz</a>
+
+        <div id="nav-menu" class="hidden md:flex absolute md:relative top-full left-0 w-full md:w-auto bg-white dark:bg-gray-900 md:bg-transparent md:dark:bg-transparent shadow-lg md:shadow-none transition-transform duration-300 ease-in-out">
+            <ul class="flex flex-col md:flex-row items-center w-full gap-8 font-semibold py-8 md:py-0">
+                <li><a href="#about" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">About</a></li>
+                <li><a href="#education" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Education</a></li>
+                <li><a href="#courses" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Courses</a></li>
+                <li><a href="#experience" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Experience</a></li>
+                <li><a href="#services" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Services</a></li>
+                <li><a href="#testimonials" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Testimonials</a></li>
+                <li><a href="#projects" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Projects</a></li>
+                <li><a href="#contact" class="nav-link hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="flex items-center gap-4">
+            <button id="theme-toggle" class="text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">
+                <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+            
+            <button id="hamburger-button" class="md:hidden text-xl hover:text-[#4CAF50] dark:hover:text-green-400 transition-colors">
+                <i id="hamburger-icon" class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+</header>
+  <!-- Hero -->
+  <main>
+<section id="home" class="min-h-screen flex flex-col md:flex-row justify-center items-center bg-gradient-to-r from-blue-900 to-blue-400 text-white px-6 pt-24">
+      <div class="flex-1 text-center md:text-left" data-aos="fade-right">
+        <h1 class="text-5xl md:text-6xl font-bold">Gehad Abdulaziz</h1>
+        <div class="w-20 h-1 bg-[#FFC107] my-4 mx-auto md:mx-0"></div>
+        <p class="text-xl mb-4">Front-End Developer</p>
+        <p class="max-w-lg mb-6">Crafting user-centric interfaces with modern technology.</p>
+        <p class="max-w-lg mb-6">Specializing in responsive web design and interactive UI development.</p>
+
+
+        <div class="flex justify-center md:justify-start gap-6 text-2xl">
+            <a href="mailto:gehadabdelaziz179@gmail.com" class="hover:text-[#FFC107] transition-colors"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/gehad-abdulaziz" target="_blank" class="hover:text-[#FFC107] transition-colors"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/gehad-abdulaziz-228973287" target="_blank" class="hover:text-[#FFC107] transition-colors"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </div>
+        <div class="flex-1 flex justify-center mt-10 md:mt-0" data-aos="zoom-in">
+        <div class="relative w-[20rem] h-[20rem] flex items-center justify-center">
+            <img src="imgs/GehadAbdulaziz1.jpg" 
+                alt="Gehad Abdulaziz" 
+                class="relative rounded-full shadow-2xl w-[19rem] h-[19rem] object-cover border-4 border-white transition-transform duration-500 hover:scale-105 hover:shadow-[#FFC107]/70">
+        </div>
+    </div>
+</section>
+<section id="about" class="container mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-12">
+    <div class="flex-1 flex justify-center" data-aos="fade-right">
+        <img src="imgs/GehadAbdulaziz.jpg" 
+        alt="About Gehad" 
+        class="w-82 h-80 object-cover rounded-xl shadow-xl border-4 border-white transition-transform duration-500 hover:scale-105 hover:shadow-[#FFC107]/70">
+    </div>
+    <div class="flex-1" data-aos="fade-left">
+        <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-6 text-center md:text-left">About Me</h2>
+        <p class="mb-4">I am a passionate Front-End Developer focused on creating clean, responsive, and interactive web experiences.</p>
+        <p class="mb-6">I have experience with <b>React</b>, <b>Tailwind CSS</b> , <b>Bootstrap</b>, and modern front-end technologies to build scalable and user-friendly applications.</p>
+        <div class="flex flex-wrap gap-3">
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+                <i class="devicon-html5-plain colored text-xl"></i> HTML
+            </span>
+            
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+                <i class="devicon-css3-plain colored text-xl"></i> CSS
+            </span>
+            
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+                <i class="devicon-javascript-plain colored text-xl"></i> JavaScript
+            </span>
+            
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+                <i class="devicon-bootstrap-plain colored text-xl"></i> Bootstrap
+            </span>
+            
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+                <i class="devicon-react-original colored text-xl"></i> React
+            </span>
+            
+            <span class="flex items-center gap-2 px-3 py-1 bg-gray-200 dark:bg-gray-800 font-semibold rounded-full">
+            <svg class="w-6 h-6" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#38BDF8" d="M24 12c-6.667 0-10.667 3.333-12 10 2.4-3.333 5.2-4.667 8.4-4 1.826.365 3.132 1.588 4.584 3.068C26.58 23.54 29.02 26 34 26c6.667 0 10.667-3.333 12-10-2.4 3.333-5.2 4.667-8.4 4-1.826-.365-3.132-1.588-4.584-3.068C29.42 14.46 26.98 12 24 12Zm-12 12c-6.667 0-10.667 3.333-12 10 2.4-3.333 5.2-4.667 8.4-4 1.826.365 3.132 1.588 4.584 3.068C14.58 35.54 17.02 38 22 38c6.667 0 10.667-3.333 12-10-2.4 3.333-5.2 4.667-8.4 4-1.826-.365-3.132-1.588-4.584-3.068C19.42 26.46 16.98 24 12 24Z"/>
+            </svg>
+            Tailwind
+            </span>
+
+        </div>
+    </div>
+ </section>
+<section class="bg-gray-100 dark:bg-gray-800 py-5 px-6" id="education">
+    <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Education</h2>
+            <div class="space-y-6">
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up">
+            <h3 class="text-xl font-semibold">Bachelor in Computer Science</h3>
+            <p class="text-gray-600 dark:text-gray-400">Helwan University, Expected Graduation 2027</p>
+        </div>
+    </div>
+    </div>
+  </section>
+  <!-- Courses -->
+  <section class="py-10 px-6" id="courses">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Courses</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up">
+          <h3 class="text-xl font-semibold">Front-End Development Course</h3>
+          <p class="text-gray-600 dark:text-gray-400">IEEE SB HU, 2025</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-xl font-semibold">Front-End Development Course</h3>
+          <p class="text-gray-600 dark:text-gray-400">MSP Helwan, 2025</p>
+        </div>
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up" data-aos-delay="400">
+          <h3 class="text-xl font-semibold">Self-Learning</h3>
+          <p class="text-gray-600 dark:text-gray-400">Practicing and learning via online resources & projects</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience -->
+  <section class="py-10 px-6" id="experience">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Work Experience</h2>
+      <div class="space-y-6">
+        <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="fade-up">
+          <h3 class="text-xl font-semibold">Front-End Developer | Freelance (Online)</h3>
+          <p class="text-gray-600 dark:text-gray-400">2024 - Present</p>
+          <ul class="list-disc list-inside mt-2">
+            <li>Developed responsive websites and landing pages for clients worldwide.</li>
+            <li>Worked with HTML, CSS, JavaScript, and frameworks to deliver user-friendly interfaces.</li>
+            <li>Collaborated remotely with clients to meet deadlines and project requirements.</li>
+            <li>Fixing website issues, improving performance, and enhancing user experience</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Services -->
+    <section id="services" class="bg-gray-100 dark:bg-black py-20 transition-colors duration-500">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-12 text-center" data-aos="fade-up">What I Do</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in">
+            <i class="fas fa-code text-4xl text-[#4CAF50] mb-4"></i>
+            <h3 class="text-2xl font-semibold mb-2">Custom Websites</h3>
+            <p>Building fully custom, SEO-friendly websites using modern HTML, CSS, JavaScript ,Bootstrap and Tailwind.</p>
+          </div>
+          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="200">
+  <i class="fas fa-pencil-ruler text-4xl text-[#6366F1] mb-4"></i>
+  
+  <h3 class="text-2xl font-semibold mb-2">UI / UX Design</h3>
+  
+  <p>
+    Creating clean and user-friendly designs, improving usability, and fixing layout issues to ensure a smooth user experience.
+  </p>
+</div>
+
+          <div class="bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 text-center hover:shadow-2xl hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-mobile-alt text-4xl text-[#4CAF50] mb-4"></i>
+            <h3 class="text-2xl font-semibold mb-2">Responsive UI</h3>
+            <p>Converting designs into fully responsive web pages for all devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Testimonials -->
+<section id="testimonials" class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white py-20">
+  <div class="container mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-12 text-center text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-400" data-aos="fade-up">
+      What My Clients Say
+    </h2>
+    
+    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center border border-gray-700" data-aos="fade-right">
+        <img src="imgs/client1.png" alt="Client feedback" class="rounded-lg shadow-md mx-auto mb-4">
+        <h4 class="font-semibold text-green-300">Aisha</h4>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg text-center border border-gray-700" data-aos="fade-left">
+        <img src="imgs/client2.png" alt="Client feedback" class="rounded-lg shadow-md mx-auto mb-4">
+        <h4 class="font-semibold text-green-300">Aisha</h4>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-100 dark:bg-gray-800 py-20 px-6" id="projects">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-12 text-[#2196F3]">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="200">
+        <img src="imgs/Mealfy (1).png" alt="Project 1" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Mealify Project (individual)</h3>
+        <div class="flex justify-center gap-4">
+          <a href="https://gehad-abdulaziz.github.io/Mealify/" target="_blank" 
+             class="text-[#2196F3] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-blue-700">
+             View Website
+          </a>
+          <a href="https://github.com/gehad-abdulaziz/Mealify" target="_blank" 
+             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
+             View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="zoom-in">
+        <img src="imgs/jsmg.png" alt="Project 2" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">JSMG Project (Team) only I do categories & product id Pages</h3>
+        <div class="flex justify-center gap-4">
+          <a href="https://gehad-abdulaziz.github.io/JSMG/Products_ProductId/index.html" target="_blank" 
+             class="text-[#2196F3] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-blue-700">
+             View Website
+          </a>
+          <a href="https://github.com/gehad-abdulaziz/JSMG" target="_blank" 
+             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
+             View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="400">
+        <img src="imgs/Rest.png" alt="Project 3" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">HiEgypt Project (Team) only I do restaurant & feedback Pages With Two Themes</h3>
+        <div class="flex justify-center gap-4">
+          <a href="https://gehad-abdulaziz.github.io/HiEgypt/html%20files/restaurants.html" target="_blank" 
+             class="text-[#2196F3] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-blue-700">
+             View Website
+          </a>
+          <a href="https://github.com/gehad-abdulaziz/HiEgypt" target="_blank" 
+             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
+             View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="200">
+        <img src="imgs/tailwind.png" alt="Project 4" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Mini Project With Tailwind(individual)</h3>
+        <div class="flex justify-center gap-4">
+          <a href="https://gehad-abdulaziz.github.io/IEEE-Tailwind/" target="_blank" 
+             class="text-[#2196F3] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-blue-700">
+             View Website
+          </a>
+          <a href="https://github.com/gehad-abdulaziz/IEEE-Tailwind" target="_blank" 
+             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
+             View Repository
+          </a>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="p-6 bg-white dark:bg-gray-900 rounded-xl shadow" data-aos="zoom-in" data-aos-delay="400">
+        <img src="imgs/react.png" alt="Project 5" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold mb-2">Mini Project With React  (individual)</h3>
+        <div class="flex justify-center gap-4">
+          <a href="https://ieee-react-one.vercel.app/" target="_blank" 
+             class="text-[#2196F3] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-blue-700">
+             View Website
+          </a>
+          <a href="https://github.com/gehad-abdulaziz/IEEE-React" target="_blank" 
+             class="text-[#4CAF50] font-semibold no-underline transition-transform transform hover:scale-105 hover:text-green-700">
+             View Repository
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Contact -->
+    <section id="contact" class="container mx-auto px-6 py-20 text-center">
+      <h2 class="text-4xl font-bold text-[#2196F3] dark:text-[#38bdf8] mb-6" data-aos="fade-up">Let's Build Something Great</h2>
+      <p class="max-w-lg mx-auto mb-8" data-aos="fade-up" data-aos-delay="200">I'm available for freelance projects and full-time opportunities. Have a project in mind? Let's talk.</p>
+      <a href="mailto:gehadabdelaziz179@gmail.com" class="bg-[#FFC107] text-black px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-transform hover:scale-105 inline-block" data-aos="zoom-in">Get In Touch</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Thank You -->
+  <footer class="py-10 bg-gray-900 text-white text-center">
+    <p data-aos="fade-up">Thank you for your time and interest ✨</p>
+  </footer>
+  <!-- Dark mode toggle -->
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const icon = document.getElementById('theme-icon');
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark'); 
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
+      } else {
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
+      }
+    });
+  </script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+<script>
+    // Mobile Menu Logic
+const hamburgerButton = document.getElementById('hamburger-button');
+const hamburgerIcon = document.getElementById('hamburger-icon');
+const navMenu = document.getElementById('nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Function to toggle the menu
+hamburgerButton.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+    // Change icon between bars and times (X)
+    if (navMenu.classList.contains('hidden')) {
+        hamburgerIcon.classList.remove('fa-times');
+        hamburgerIcon.classList.add('fa-bars');
+    } else {
+        hamburgerIcon.classList.remove('fa-bars');
+        hamburgerIcon.classList.add('fa-times');
+    }
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        navMenu.classList.add('hidden'); // Hide the menu
+        // Reset icon to bars
+        hamburgerIcon.classList.remove('fa-times');
+        hamburgerIcon.classList.add('fa-bars');
+    });
+});
+</script>
+</body>
+</html>
